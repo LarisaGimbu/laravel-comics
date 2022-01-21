@@ -5,12 +5,15 @@
     <div class="btn">current series</div>
   </div>
   <div class="container">
-    <div class="box">
-      <div class="image-box">
-        <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX">
+    @foreach ($cards as $card)
+      <div class="box">
+        <div class="image-box">
+          <img src="{{$card['thumb']}} ">
+        </div>
+        <p>{{$card['series']}} </p>
       </div>
-      <p>Action Comics</p>
-    </div>
+    @endforeach
+    
 
   </div>
   <div class="load-container">
@@ -19,10 +22,13 @@
   </div>
 
   <section class="infobar">
+    @foreach ($infos as $info)
     <div class="info-box">
-      <img src="{{asset('img/buy-comics-digital-comics.png')}} " alt="">
-      <p class="description">digital comics</p>
+      <img src="{{$info['image']}} " alt="">
+      <p class="description">{{$info['text']}}</p>
     </div>
+    @endforeach
+    
   </section>
 
 </main>
