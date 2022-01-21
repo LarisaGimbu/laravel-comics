@@ -3,9 +3,9 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  height: 90px;
   img{
-    width: 80px;
+    width: 70px;
   }
   ul{
     list-style: none;
@@ -14,10 +14,9 @@ header{
       a{
         text-decoration: none;
         text-transform: uppercase;
-        padding: 2rem 0.5rem;
-        font-size: 0.9rem;
+        padding: 2.5rem 0.5rem;
+        font-size: 0.8rem;
         font-weight: bold;
-        // line-height: 96px;
         color: #464646;
         &.active,
         &:hover{
