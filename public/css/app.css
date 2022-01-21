@@ -62,7 +62,7 @@ main {
 }
 main .jumbotron {
   position: relative;
-  background-color: wheat;
+  background-image: url("../img/jumbotron.jpg");
   height: 280px;
   background-size: cover;
 }
@@ -138,7 +138,7 @@ main .load-container .btn {
 footer .top-footer {
   display: flex;
   height: 380px;
-  background-color: #000000;
+  background-image: url("../img/footer-bg.jpg");
   overflow: hidden;
 }
 footer .top-footer .container {
