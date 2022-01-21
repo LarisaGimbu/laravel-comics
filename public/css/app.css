@@ -42,18 +42,91 @@ header ul {
 }
 header ul li {
   display: inline-block;
-  padding: 0 0.5rem;
 }
 header ul li a {
   text-decoration: none;
   text-transform: uppercase;
+  padding: 2rem 0.5rem;
   font-size: 0.9rem;
   font-weight: bold;
-  line-height: 96px;
   color: #464646;
 }
 header ul li a.active, header ul li a:hover {
   cursor: pointer;
   color: #0282F9;
   border-bottom: 4px solid #0282F9;
+}
+
+footer .top-footer {
+  display: flex;
+  height: 400px;
+  background-color: #000000;
+  overflow: hidden;
+}
+footer .top-footer .container {
+  display: flex;
+}
+footer .top-footer .left-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+  padding-top: 30px;
+}
+footer .top-footer .left-content ul {
+  list-style: none;
+  padding: 20px 20px 0 0;
+}
+footer .top-footer .left-content ul li {
+  color: #959595;
+  font-size: 0.7rem;
+  padding-bottom: 0.5rem;
+}
+footer .top-footer .left-content ul li:hover {
+  color: white;
+  cursor: pointer;
+}
+footer .top-footer .left-content ul li h3 {
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 0.9rem;
+}
+footer .top-footer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .bottom-footer {
+  display: flex;
+  align-items: center;
+  background-color: #303030;
+  height: 100px;
+}
+footer .bottom-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .bottom-footer .btn {
+  background-color: #303030;
+}
+footer .bottom-footer .btn:hover {
+  background-color: #0282F9;
+}
+footer .bottom-footer span {
+  font-weight: bold;
+  color: #0282F9;
+  padding-right: 15px;
+}
+footer .bottom-footer i {
+  color: #303030;
+  background-color: #797979;
+  padding: 5px 8px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+footer .bottom-footer i:hover {
+  background-color: white;
+  cursor: pointer;
 }
